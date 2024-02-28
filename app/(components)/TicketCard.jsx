@@ -1,6 +1,8 @@
 import Link from "next/link";
 import DeleteBlock from "./DeleteBlock";
 import PriorityDisplay from "./PriorityDisplay";
+import ProgressDisplay from "./ProgressDisplay";
+import StatusDisplay from "./StatusDisplay";
 
 const TicketCard = ({ ticket }) => {
   return (
@@ -15,6 +17,16 @@ const TicketCard = ({ ticket }) => {
         <h4 className="mb-1">{ticket}</h4>
         <hr className="h-px  border-0 bg-page mb-2 "></hr>
         <p className="whitespace-pre-wrap">{ticket}</p>
+
+        <div className="flex-grow"></div>
+        <div className="flex mt-2">
+          <div className="flex flex-col">
+            <ProgressDisplay />
+          </div>
+          <div className="ml-auto  flex items-end">
+            <StatusDisplay />
+          </div>
+        </div>
       </Link>
     </div>
   );
