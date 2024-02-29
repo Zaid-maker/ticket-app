@@ -20,7 +20,7 @@ const Dashboard = async () => {
   const data = await getTickets();
 
   if (!data?.tickets) {
-    return <p>No Tickets</p>;
+    return <p className="text-2xl p-3">No Tickets</p>;
   }
 
   const tickets = data.tickets;
