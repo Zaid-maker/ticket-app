@@ -73,13 +73,13 @@ const EditTicketForm = ({ ticket }) => {
   ];
 
   return (
-    <div className="flex justify-center">
+    <div className=" flex justify-center">
       <form
         onSubmit={handleSubmit}
         method="post"
         className="flex flex-col gap-3 w-1/2"
       >
-        <h3>{EDITMODE ? "Update your Ticket" : "Create New Ticket"}</h3>
+        <h3>{EDITMODE ? "Update Your Ticket" : "Create New Ticket"}</h3>
         <label>Title</label>
         <input
           id="title"
@@ -101,8 +101,8 @@ const EditTicketForm = ({ ticket }) => {
         <label>Category</label>
         <select
           name="category"
-          onChange={handleChange}
           value={formData.category}
+          onChange={handleChange}
         >
           {categories?.map((category, _index) => (
             <option key={_index} value={category}>
@@ -110,6 +110,7 @@ const EditTicketForm = ({ ticket }) => {
             </option>
           ))}
         </select>
+
         <label>Priority</label>
         <div>
           <input
@@ -160,13 +161,13 @@ const EditTicketForm = ({ ticket }) => {
         </div>
         <label>Progress</label>
         <input
+          type="range"
           id="progress"
           name="progress"
-          type="range"
-          onChange={handleChange}
-          value={formData.progess}
+          value={formData.progress}
           min="0"
           max="100"
+          onChange={handleChange}
         />
         <label>Status</label>
         <select name="status" value={formData.status} onChange={handleChange}>
