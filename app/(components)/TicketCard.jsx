@@ -13,10 +13,10 @@ const TicketCard = ({ ticket }) => {
           <DeleteBlock />
         </div>
       </div>
-      <Link href={`/TicketPage/${ticket}`} style={{ display: "contents" }}>
-        <h4 className="mb-1">{ticket}</h4>
+      <Link href={`/TicketPage/${ticket._id}`} style={{ display: "contents" }}>
+        <h4 className="mb-1">{ticket.title}</h4>
         <hr className="h-px  border-0 bg-page mb-2 "></hr>
-        <p className="whitespace-pre-wrap">{ticket}</p>
+        <p className="whitespace-pre-wrap">{ticket.description}</p>
 
         <div className="flex-grow"></div>
         <div className="flex mt-2">
