@@ -114,7 +114,7 @@ const EditTicketForm = ({ ticket }) => {
         <div>
           <input
             id="priority-1"
-            name="priority-1"
+            name="priority"
             type="radio"
             onChange={handleChange}
             value={1}
@@ -123,34 +123,34 @@ const EditTicketForm = ({ ticket }) => {
           <label>1</label>
           <input
             id="priority-2"
-            name="priority-2"
+            name="priority"
             type="radio"
             onChange={handleChange}
-            value={1}
+            value={2}
             checked={formData.priority == 2}
           />
           <label>2</label>
           <input
             id="priority-3"
-            name="priority-3"
+            name="priority"
             type="radio"
             onChange={handleChange}
-            value={1}
+            value={3}
             checked={formData.priority == 3}
           />
           <label>3</label>
           <input
             id="priority-4"
-            name="priority-4"
+            name="priority"
             type="radio"
             onChange={handleChange}
-            value={1}
+            value={4}
             checked={formData.priority == 4}
           />
           <label>4</label>
           <input
             id="priority-5"
-            name="priority-5"
+            name="priority"
             type="radio"
             onChange={handleChange}
             value={5}
