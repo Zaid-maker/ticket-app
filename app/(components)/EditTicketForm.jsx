@@ -10,7 +10,7 @@ const EditTicketForm = ({ ticket }) => {
     title: "",
     description: "",
     priority: 1,
-    progess: 0,
+    progress: 0,
     status: "not started",
     category: "Hardware Problem",
   };
