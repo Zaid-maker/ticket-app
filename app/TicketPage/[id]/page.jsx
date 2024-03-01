@@ -30,7 +30,7 @@ const TicketPage = async ({ params }) => {
       _id: "new",
     };
   }
-  return <EditTicketForm />;
+  return <EditTicketForm ticket={updateTicketData} />;
 };
 
 export default TicketPage;
