@@ -21,7 +21,7 @@ const TicketCard = ({ ticket }) => {
         <div className="flex-grow"></div>
         <div className="flex mt-2">
           <div className="flex flex-col">
-            <ProgressDisplay />
+            <ProgressDisplay progress={ticket.progress} />
           </div>
           <div className="ml-auto  flex items-end">
             {/*<StatusDisplay status={ticket.status} />*/}
