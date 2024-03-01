@@ -1,3 +1,4 @@
+import EditTicketForm from "@/app/(components)/EditTicketForm";
 import React from "react";
 
 const getTicketById = async (id) => {
@@ -29,7 +30,7 @@ const TicketPage = async ({ params }) => {
       _id: "new",
     };
   }
-  return <div>TicketPage</div>;
+  return <EditTicketForm />;
 };
 
 export default TicketPage;
